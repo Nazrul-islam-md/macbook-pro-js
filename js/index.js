@@ -48,7 +48,9 @@ function getCalculate(){
     const ram = getInteger('memory-cost');
     const storage = getInteger('storage-cost');
     const delivery = getInteger('delivery-cost');
+    const total = document.getElementById('total');
     totalPrice.innerText = basePrice + storage + delivery + ram;
+    total.innerText = basePrice + storage + delivery + ram;
 
 }
 // memory
@@ -74,4 +76,17 @@ document.getElementById('aug26').addEventListener('click', function(){
 })
 document.getElementById('aug19').addEventListener('click', function(){
     getDelivery(true);
+})
+// promo
+document.getElementById('apply').addEventListener('click', function(){
+    const promo = document.getElementById('promoInput');
+    const totalPrice = document.getElementById('total-price');
+    const totalPriceAmount = parseInt(totalPrice.innerText);
+    const discount = totalPriceAmount * 0.2;
+    const total = document.getElementById('total');
+    if(promo.value == 'stevekaku'){
+        totalPrice.innerText = totalPriceAmount - discount;
+        total.innerText = totalPrice.innerText;
+        promo.value = '';
+    }
 })
