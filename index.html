@@ -23,19 +23,19 @@
                 <!-- options -->
                 <h4 class="mt-4">Memory</h4>
                 <div>
-                    <button class="bg-white">8GB unified memory</button>
-                    <button class="bg-white">16GB unified memory</button>
+                    <button id="8gb" class="bg-white">8GB unified memory</button>
+                    <button id="16gb" class="bg-white">16GB unified memory</button>
                 </div>
                 <h4 class="mt-4">Storage</h4>
                 <div>
-                    <button class="bg-white">256GB SSD storage</button>
-                    <button class="bg-white">512GB SSD storage</button>
-                    <button class="bg-white">1TB SSD storage</button>
+                    <button id="256gb" class="bg-white">256GB SSD storage</button>
+                    <button id="512gb" class="bg-white">512GB SSD storage</button>
+                    <button id="1tb" class="bg-white">1TB SSD storage</button>
                 </div>
                 <h4 class="mt-4">Choose your delivery option</h4>
                 <div>
-                    <button class="bg-white">Friday, Aug 26 FREE Delivery</button>
-                    <button class="bg-white">Friday, Aug 19 Delivery charge $20</button>
+                    <button id="aug26" class="bg-white">Friday, Aug 26 FREE Delivery</button>
+                    <button id="aug19" class="bg-white">Friday, Aug 19 Delivery charge $20</button>
                 </div>
                 <!-- calculation -->
                 <div class="row g-0 w-75 mt-5">
@@ -51,14 +51,14 @@
                         <hr>
                     </div>
                     <div class="col-4">
-                        <h4>$<span>1299</span></h4>
+                        <h4>$<span id="base-price">1299</span></h4>
                         <hr>
-                        <h4>$<span>0</span></h4>
+                        <h4>$<span id="memory-cost">0</span></h4>
                         <hr>
-                        <h4>$<span>0</span></h4>
+                        <h4>$<span id="storage-cost">0</span></h4>
                         <hr>
-                        <h4 class="border-bottom border-dark border-2 pb-3">$<span>0</span></h4>
-                        <h4>$<span>1299</span></h4>
+                        <h4 class="border-bottom border-dark border-2 pb-3">$<span id="delivery-cost">0</span></h4>
+                        <h4>$<span id="total-price">1299</span></h4>
                         <hr>
                     </div>
                     <!-- Promo code -->
@@ -76,5 +76,7 @@
 
     <!-- JS bundle bootstrap 5-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- custom js -->
+    <script src="js/index.js"></script>
 </body>
 </html>
